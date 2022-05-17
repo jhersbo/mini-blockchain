@@ -12,7 +12,7 @@ func main() {
 	for i, block := range newblockchain.Blocks { // iterate on each block
 		fmt.Printf("Block ID : %d \n",i)                                        
 		fmt.Printf("Timestamp : %d \n", block.Timestamp+int64(i))
-		fmt.Printf("Hash of the block %x\n", block.MyBlockHash)                 // print the hash of the block
+		fmt.Printf("Hash of the block: %x\n", block.MyBlockHash)                 // print the hash of the block
 		fmt.Printf("Hash of the previous Block: %x\n", block.PreviousBlockHash) // print the hash of the previous block
 		fmt.Printf("All the transactions: %s\n", block.AllData)                 // print the transactions
 	} // our blockchain will be printed
